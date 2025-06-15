@@ -52,11 +52,11 @@ const scenes: Scene[] = [
       "They dreamed big and built technologies beyond limits.",
       " The future looked limitless."
     ],
-    background: "/assets/images/smoketron_golden_age.png", // Gambar Smoketron yang sangat maju & makmur
+    background: "/assets/images/schene/schene_1.png", // Gambar Smoketron yang sangat maju & makmur
     character: {
-      image: "/assets/images/king_young.png", // Mungkin Smoke King di masa mudanya, optimis
+      image: "/assets/images/schene/char_schene_1.png", // Mungkin Smoke King di masa mudanya, optimis
       position: "bottom-left",
-      size: { width: "w-auto", height: "h-screen" },
+      size: { width: "w-auto", height: "h-1/1" },
       animation: { initial: { y: 0, scale: 0.8, opacity: 0 }, animate: { y: 0, scale: 1, opacity: 0.7 } }
     },
     textPosition: "left"
@@ -69,11 +69,11 @@ const scenes: Scene[] = [
       "A self-sustaining technology designed to elevate their civilization to the next level.<br>",
       "It was Smoketron’s masterpiece."
     ],
-    background: "/assets/images/cigar_tech_active.png", // Gambar teknologi $CIGAR yang berfungsi & canggih
+    background: "/assets/images/schene/schene_2.png", // Gambar teknologi $CIGAR yang berfungsi & canggih
     character: {
-      image: "", // Fokus pada teknologi $CIGAR itu sendiri
+      image: "/assets/images/schene/char_schene_2.png", // Fokus pada teknologi $CIGAR itu sendiri
       position: "center",
-      size: { width: "w-3/4", height: "h-3/4" }, // Sesuaikan ukuran
+      size: { width: "w-1/2", height: "h-1/1" }, // Sesuaikan ukuran
       animation: { initial: { scale: 0.8, opacity: 0 }, animate: { scale: 1, opacity: 0.9 } }
     },
     textPosition: "left"
@@ -86,10 +86,10 @@ const scenes: Scene[] = [
       "A mysterious anomaly shattered their core systems.",
       " $CIGAR, once strong and proud, was now fragile and unstable."
     ],
-    background: "/assets/images/krellnic_inversion_effect.png", // Gambar efek anomali kosmik atau kerusakan sistemik
+    background: "/assets/images/schene/schene_3.png", // Gambar efek anomali kosmik atau kerusakan sistemik
     character: {
-      image: "/assets/images/cigar_tech_damaged.png", // Gambar teknologi $CIGAR yang rusak/tidak stabil
-      position: "center",
+      image: "/assets/images/schene/char_schene_3.png", // Gambar teknologi $CIGAR yang rusak/tidak stabil
+      position: "center-right",
       size: { width: "w-1/2", height: "h-1/2" },
       animation: { initial: { opacity: 1, filter: "grayscale(100%)" }, animate: { opacity: 0.6, filter: "grayscale(50%)", y: [0, 5, 0] }, transition: { yoyo: Infinity, duration: 3 } }
     },
@@ -103,9 +103,9 @@ const scenes: Scene[] = [
       " $CIGAR still held potential but couldn’t survive alone.<br>",
       "It needed a new, resilient foundation."
     ],
-    background: "/assets/images/smoketron_council_chamber.png", // Ruang dewan yang suram atau laboratorium darurat
+    background: "/assets/images/schene/schene_4.png", // Ruang dewan yang suram atau laboratorium darurat
     character: {
-      image: "/assets/images/profesor_worried.png", // Profesor Kal'Zor tampak khawatir tapi menemukan solusi
+      image: "/assets/images/schene/char_schene_4.png", // Profesor Kal'Zor tampak khawatir tapi menemukan solusi
       position: "bottom-right",
       size: { width: "w-auto", height: "h-3/4" },
       animation: { initial: { x: 100, opacity: 0 }, animate: { x: 0, opacity: 0.7 } }
@@ -120,11 +120,11 @@ const scenes: Scene[] = [
       " They discovered a protocol signature on a distant blue planet: Earth.",
       " A network called ‘Base’—the perfect host to rebuild $CIGAR."
     ],
-    background: "/assets/images/star_map_highlight_earth.png", // Peta bintang dengan Bumi/Base ditandai
+    background: "/assets/images/schene/schene_5.png", // Peta bintang dengan Bumi/Base ditandai
      character: {
-      image: "/assets/images/scientists_discovering.png", // Ilmuwan Smoketron menemukan Base
+      image: "/assets/images/schene/char_schene_5.png", // Ilmuwan Smoketron menemukan Base
       position: "center-left",
-      size: { width: "w-auto", height: "h-2/3" },
+      size: { width: "w-1/2", height: "h-1/2" },
       animation: { initial: { x: -100, opacity: 0 }, animate: { x: 0, opacity: 0.8 } }
     },
     textPosition: "left" // Pindahkan teks ke kanan agar tidak menutupi karakter ilmuwan
@@ -136,9 +136,9 @@ const scenes: Scene[] = [
       "A message was broadcast to Earth.<br>Smoketron sought brave allies, visionaries ready to rebuild $CIGAR on the Base network. <br> <br>", // Menggunakan "protocol BASE" sesuai permintaan Anda
       "Join us. Build the future. Claim the rewards."
     ],
-    background: "/assets/images/earth_transmission_overlay.png", // Bumi dengan overlay transmisi
+    background: "/assets/images/schene/schene_6.png", // Bumi dengan overlay transmisi
     character: {
-      image: "/assets/images/cigar_emblem_transmitted.png", // Emblem $CIGAR ditransmisikan
+      image: "", // Emblem $CIGAR ditransmisikan
       position: "center",
       size: { width: "w-80", height: "h-80" }, // Disesuaikan
       animation: { initial: { scale: 0.5, opacity: 0 }, animate: { scale: 1, opacity: 0.6 }, transition: { delay: 1, duration: 1.5 } }

@@ -371,9 +371,13 @@ const Header = React.memo<HeaderProps>(({ onStoryMenuReset }) => {
               }}
               title="To Mission Section"
             >
-              <Rocket className="h-8 w-8 text-cyan-glow mr-2" />
+              <img
+                src="/assets/images/logoCigar.webp"
+                alt="CIGAR Logo"
+                className="h-8 w-8"
+              />
               <span className="font-orbitron text-xl font-bold text-white">
-                <span className="text-cyan-glow">$</span>CIGAR
+                CIGAR
               </span>
             </div>
             <nav className="hidden md:flex items-center space-x-7">
