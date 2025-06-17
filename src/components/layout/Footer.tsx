@@ -48,6 +48,11 @@ const Footer: React.FC = () => {
     { name: 'Claim Airdrop', type: 'coming_soon', path: '/claim', id: 'claim_airdrop_link' },
   ];
 
+  const legalItems = [
+    { name: 'Terms of Service', path: '/terms-of-service', id: 'terms_of_service_link' },
+    { name: 'Privacy Policy', path: '/privacy-policy', id: 'privacy_policy_link' },
+  ];
+
   const handleResourceClick = useCallback((event: React.MouseEvent<HTMLAnchorElement>, resource: typeof resourceItems[0]) => {
     // Pastikan event.preventDefault() selalu dipanggil di awal
     event.preventDefault();
@@ -77,7 +82,7 @@ const Footer: React.FC = () => {
     <footer className="relative py-12 mt-20 border-t border-cyan-glow/20">
       <div className="tech-grid absolute inset-0 opacity-20"></div>
       <div className="container mx-auto px-4 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
           {/* Logo and Description */}
           <div className="md:col-span-1">
             <div className="flex items-center mb-4">
@@ -134,6 +139,24 @@ const Footer: React.FC = () => {
                       {(item.type === 'coming_soon') && <span className="text-xs text-gray-500 ml-2">(Soon)</span>}
                     </a>
                   )}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Legal */}
+          <div className="md:col-span-1">
+            <h3 className="font-orbitron text-white mb-4">Legal</h3>
+            <ul className="space-y-2">
+              {legalItems.map((item) => (
+                <li key={item.id}>
+                  <Link
+                    to={item.path}
+                    onClick={() => playSound('/assets/sounds/robot-click.wav')}
+                    className="text-gray-400 hover:text-cyan-glow transition-colors text-sm"
+                  >
+                    {item.name}
+                  </Link>
                 </li>
               ))}
             </ul>
