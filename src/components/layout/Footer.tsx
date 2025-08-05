@@ -167,7 +167,7 @@ const Footer: React.FC = () => {
             <h3 className="font-orbitron text-white mb-4">Join The Fleet</h3>
             <div className="flex space-x-4">
               <a
-                href="#" // Ganti dengan URL Twitter Anda
+                href="https://x.com/intent/follow?screen_name=cigarprotocol"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => playSound('/assets/sounds/robot-click.wav')}
@@ -176,7 +176,7 @@ const Footer: React.FC = () => {
                 <Twitter className="h-5 w-5 text-cyan-glow" />
               </a>
               <a
-                href="#" // Ganti dengan URL Discord Anda
+                href="https://discord.gg/kYuq9S5X"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => playSound('/assets/sounds/robot-click.wav')}

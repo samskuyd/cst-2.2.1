@@ -88,14 +88,14 @@ const CommunitySection: React.FC = () => {
     {
       name: "Zyph-R8",
       role: "Blockchain Engineer",
-      imageUrl: "https://images.pexels.com/photos/2589653/pexels-photo-2589653.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      imageUrl: "/assets/images/schene/char_schene_4.png",
       quote: "Fascinating! Earth's blockchain is ingenious. Our Smoketronian algorithms can synergize with it, elevating both our network capabilities.",
       delay: 300
     },
     {
       name: "Vex Nyxari",
       role: "Ambassador to Earth",
-      imageUrl: "https://images.pexels.com/photos/3283568/pexels-photo-3283568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      imageUrl: "/assets/images/vex-nyxari.jpg",
       quote: "Greetings, Terran partners. Your vital role in our shared protocol ensures generous rewards for all.",
       delay: 400
     }
